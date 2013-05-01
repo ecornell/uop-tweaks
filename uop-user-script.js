@@ -12,6 +12,34 @@
 //
 // ==/UserScript==
 
+//
+
+$(document).ready(function() {
+
+    var showNextThread = function() {
+        var e = $('a.next-icon.righticon');
+        var url = e.attr('href');
+        if (url) {
+            e.css('border', '2px solid blue');
+    	    window.location.href = url;
+        }
+    };
+    
+    var showPrevThread = function() {
+        var e = $('a.previous-icon.lefticon')
+        var url = e.attr('href');
+        if (url) {
+            e.css('border', '2px solid blue');
+    	    window.location.href = url;
+        }
+    };
+    
+    //
+
+    shortcut.add("l",showNextThread);
+    shortcut.add("h",showPrevThread);
+ 
+});
 
 
 $("#message_box").ready(function (){
@@ -34,6 +62,11 @@ $("#message_box").ready(function (){
         }
     };
     
+    var clickreply = function() {
+        var e = $('a.reply-icon.lefticon')
+        e.css('border', '2px solid blue').click();
+    };
+    
     //
 
     shortcut.add("j",showNext, {'target':top});
@@ -42,6 +75,9 @@ $("#message_box").ready(function (){
     shortcut.add("k",showPrev, {'target':top});
     shortcut.add("k",showPrev, {'propagate':true,'target':document,'disable_in_input':true});
     
+    shortcut.add("r",clickreply, {'target':top});
+    shortcut.add("r",clickreply, {'propagate':true,'target':document,'disable_in_input':true});
+ 
     
 });
 
