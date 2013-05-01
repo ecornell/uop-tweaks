@@ -2,7 +2,6 @@
 To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/. 
 Elijah Cornell - http://8bitmage.com */
 
-
 @-moz-document domain("classroom.phoenix.edu") {
 
 /* Normalize Message Fonts */
@@ -50,9 +49,9 @@ div#at-banner {
 }
 
 .at-datebox {
-  margin-top: -50px !important;
-  color: white;
-  font-size:11px !important;
+  margin-top: -45px !important;
+  color: white !important;
+  font-size: 11px !important;
 }
 
 .openwindow-btn {
@@ -67,6 +66,8 @@ div#at-banner {
 .hd-bkg #hd .at-tabs ul#menu_nav_1 li a {
     line-height: 12px !important;
     padding: 0 8px !important;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .hd-bkg #hd .at-tabs ul#menu_nav_1 {
@@ -83,7 +84,7 @@ div#at-topnav {
 }
 
 .yui-b {
-  margin-top: 22px !important;
+  margin-top: 0px !important;
 }
 
 .yui-b > h1 {
