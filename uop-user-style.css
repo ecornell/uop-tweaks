@@ -26,6 +26,10 @@ Elijah Cornell - http://8bitmage.com */
   padding-right: 0px  !important;
 }
 
+#apolloStorageSwf {
+  display: none;
+}
+
 
 
 /* Main Forum Area */
