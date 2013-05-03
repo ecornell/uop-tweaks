@@ -36,8 +36,8 @@ $(document).ready(function() {
     
     //
 
-    shortcut.add("l",showNextThread);
-    shortcut.add("h",showPrevThread);
+    shortcut.add("l",showNextThread, {'disable_in_input':true});
+    shortcut.add("h",showPrevThread, {'disable_in_input':true});
  
 });
 
@@ -69,13 +69,13 @@ $("#message_box").ready(function (){
     
     //
 
-    shortcut.add("j",showNext, {'target':top});
+    shortcut.add("j",showNext, {'target':top,'disable_in_input':true});
     shortcut.add("j",showNext, {'propagate':true,'target':document,'disable_in_input':true});
     
-    shortcut.add("k",showPrev, {'target':top});
+    shortcut.add("k",showPrev, {'target':top,'disable_in_input':true});
     shortcut.add("k",showPrev, {'propagate':true,'target':document,'disable_in_input':true});
     
-    shortcut.add("r",clickreply, {'target':top});
+    shortcut.add("r",clickreply, {'target':top,'disable_in_input':true});
     shortcut.add("r",clickreply, {'propagate':true,'target':document,'disable_in_input':true});
  
     

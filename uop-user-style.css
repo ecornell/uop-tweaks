@@ -5,12 +5,7 @@ Elijah Cornell - http://8bitmage.com */
 @-moz-document domain("classroom.phoenix.edu") {
 
 /* Normalize Message Fonts */
-#view_message_text span{
-  font-size:16px !important;
-  line-height: 19px !important;
-  font-family: 'Calibri', arial, helvetica, clean, sans-serif !important;
-}
-#view_message_text {
+#view_message_text, #view_message_text span, #view_message_text font {
   font-size:16px !important;
   line-height: 19px !important;
   font-family: 'Calibri', arial, helvetica, clean, sans-serif !important;
