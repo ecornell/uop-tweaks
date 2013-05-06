@@ -90,6 +90,19 @@ div#at-topnav {
   display: none;
 }
 
+span.button.default-btn {
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+button.thread-icon span.icon {
+    display: none !important;
+}
+
+button.thread-icon {
+    font: 0.8em Arial,Helvetica,sans-serif !important;
+    display: inline !important;
+}
 
   
 
