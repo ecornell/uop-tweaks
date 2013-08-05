@@ -104,7 +104,17 @@ button.thread-icon {
     display: inline !important;
 }
 
-  
+div.messagetitle {
+    padding: 0 !important;
+}
+
+div.messagetitle h2 {
+    font-size: 1.2em !important;
+}
+
+div#nextprevious {
+    margin: 5px 0 0 5px !important;
+}
 
 ul.message_icontable {
   list-style-type:none !important;
@@ -142,7 +152,9 @@ div.ft-bkg {
   
 }
 
-@-moz-document url-prefix("https://classroom.phoenix.edu/afm212/secure/confirm.jspa"), url-prefix("https://classroom.phoenix.edu/afm212/secure/post!default.jspa") {
+@-moz-document url-prefix("https://classroom.phoenix.edu/afm214/secure/confirm.jspa"), 
+   url-prefix("https://classroom.phoenix.edu/afm214/secure/post!default.jspa") {
+   
 .hd-bkg {
     display: none;
 }
