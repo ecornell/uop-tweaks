@@ -138,7 +138,9 @@ ul.message_icontable #divWatchFlag {
     display: none;
 }   
   
-
+div[role="button"] { /* Hide Flashblock placeholders */
+    display: none !important;
+}
 
 /* Uncomment to Remove footer and extra side bar */
 

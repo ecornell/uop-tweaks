@@ -6,7 +6,7 @@
 // @version     1
 // @grant       none
 //
-// This work is licensed under the Creative Commons Attribution 3.0 Unported License. 
+// This work dual licensed under the MIT and Creative Commons Attribution 3.0 Unported Licenses. 
 //  To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/. 
 //  Elijah Cornell - http://8bitmage.com 
 //
@@ -34,8 +34,6 @@ $(document).ready(function() {
         }
     };
     
-    //
-
     shortcut.add("l",showNextThread, {'disable_in_input':true});
     shortcut.add("h",showPrevThread, {'disable_in_input':true});
  
@@ -67,7 +65,28 @@ $("#message_box").ready(function (){
         e.css('border', '2px solid blue').click();
     };
     
+    var setView1 = function() {
+        var s = $('select#opt :nth-child(1)').attr('selected', true); 
+        optionSelected( s.parent().get(0) );
+    }; 
+    var setView2 = function() {
+        var s = $('select#opt :nth-child(2)').attr('selected', true); 
+        optionSelected( s.parent().get(0) );
+    };
+    var setView3 = function() {
+        var s = $('select#opt :nth-child(3)').attr('selected', true); 
+        optionSelected( s.parent().get(0) );
+    };
+    var setView4 = function() {
+        var s = $('select#opt :nth-child(4)').attr('selected', true); 
+        optionSelected( s.parent().get(0) );
+    };
+    
     //
+    shortcut.add("1",setView1, {'target':top,'disable_in_input':true});
+    shortcut.add("2",setView2, {'target':top,'disable_in_input':true});
+    shortcut.add("3",setView3, {'target':top,'disable_in_input':true});
+    shortcut.add("4",setView4, {'target':top,'disable_in_input':true});
 
     shortcut.add("j",showNext, {'target':top,'disable_in_input':true});
     shortcut.add("j",showNext, {'propagate':true,'target':document,'disable_in_input':true});

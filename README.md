@@ -34,6 +34,7 @@ Tested on Firefox with MonkeyScript
         * j / k - Next message / Previous message
         * h / l - Next thread / Previous thread
         * r - reply
+        * 1 / 2 / 3 / 4 - Switch between the different forum views
 
 * Userscripts.org
     * UoP Forum Tweaks
