@@ -4,173 +4,158 @@ Elijah Cornell - http://8bitmage.com */
 
 @-moz-document domain("classroom.phoenix.edu") {
 
-/* Normalize Message Fonts */
-#view_message_text, #view_message_text span, #view_message_text font {
-  font-size:16px !important;
-  line-height: 19px !important;
-  font-family: 'Calibri', arial, helvetica, clean, sans-serif !important;
-}
-  
-
-/* Uncomment to hide Google tools */
-#petscontainer {
-  display: none !important;
-}
-
-.pets-identity {
-  padding-right: 0px  !important;
-}
-
-#apolloStorageSwf {
-  display: none;
-}
-
+    /* Normalize Message Fonts */
+    #view_message_text, #view_message_text span, #view_message_text font {
+      font-size:16px !important;
+      line-height: 19px !important;
+      font-family: 'Calibri', arial, helvetica, clean, sans-serif !important;
+    }
+    
+    /* Uncomment to hide Google tools */
+    #petscontainer {
+      display: none !important;
+    }
+    
+    .pets-identity {
+      padding-right: 0px  !important;
+    }
+    
+    #apolloStorageSwf {
+      display: none;
+    }
 
 
-/* Main Forum Area */
+    /* Main Forum Area */
 
-.hd-bkg #hd #at-header {
-  background-image: none !important; 
-  font-size:11px !important;
-}
-  
-.hd-bkg div#at-banner {
-  height: 1px !important;
-}
-  
-div#at-banner {
-    height: 0;
-    overflow: visible !important;
-}
+    /* Header */
+    #aes-header {
+        display: none;        
+    }
+    
+    body > header #aes-header-nav {
+       margin-top: 0;        
+    }
+    
+    body > header #aes-header-subnav { 
+     height: 32px;   
+    }
 
-.hd-bkg #hd div#at-nav2 a {
-   color: white !important;
-}
+    body > header #aes-header-subnav > nav {
+        padding: 0;
+    }
+    
+    #aes-header-subnav-toolbox-title {
+        margin: 4px 0px 0px;
+        padding: 4px 8px;
+    }
 
-.at-datebox {
-  margin-top: -45px !important;
-  color: white !important;
-  font-size: 11px !important;
-}
-
-.openwindow-btn {
-  display: none !important;
-}
-
-#messagelist {
-  font-size:12px !important;
-}  
-  
-
-.hd-bkg #hd .at-tabs ul#menu_nav_1 li a {
-    line-height: 12px !important;
-    padding: 0 8px !important;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-.hd-bkg #hd .at-tabs ul#menu_nav_1 {
-  margin: 2px 0 0 10px !important;
-}
-  
-.hd-bkg #hd .at-tabs {
-    height: 20px !important;
-    margin-left: 0px !important;
-}
-
-div#at-topnav {
-    padding: 0px 0px 0px 0 !important;
-}
-
-.yui-b {
-  margin-top: 0px !important;
-}
-
-.yui-b > h1 {
-  display: none;
-}
-
-span.button.default-btn {
-    border: 0 !important;
-    margin: 0 !important;
-}
-
-button.thread-icon span.icon {
-    display: none !important;
-}
-
-button.thread-icon {
-    font: 0.8em Arial,Helvetica,sans-serif !important;
-    display: inline !important;
-}
-
-div.messagetitle {
-    padding: 0 !important;
-}
-
-div.messagetitle h2 {
-    font-size: 1.2em !important;
-}
-
-div#nextprevious {
-    margin: 5px 0 0 5px !important;
-}
-
-ul.message_icontable {
-  list-style-type:none !important;
-  margin:0 !important; 
-  padding:0 !important;
-}
-
-.message_icontable li {
-  display:inline;
-  padding-left: 5px;
-}
-  
-
-ul.message_icontable #printMessage {
-    display: none;
-}  
-ul.message_icontable #divWatchFlag {
-    display: none;
-}  
-#removeMessageLink span:nth-child(2) {
-    display: none;
-}   
-  
-div[role="button"] { /* Hide Flashblock placeholders */
-    display: none !important;
-}
-
-/* Uncomment to Remove footer and extra side bar */
-
-div.at-panel:nth-child(3) {
-    display: none;
-}
-div.ft-bkg {
-    display: none;
-}
-  
+    /* Message Area */
+    
+    .at-datebox {
+      margin-top: -45px !important;
+      color: white !important;
+      font-size: 11px !important;
+    }
+            
+    .openwindow-btn {
+      display: none !important;
+    }
+    
+    #messagelist {
+      font-size:12px !important;
+    }  
+ 
+    .yui-b {
+      margin-top: 0px !important;
+    }
+    
+    .yui-b > h1 {
+      display: none;
+    }
+    
+    span.button.default-btn {
+        border: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Tweak message action link/icons */
+    
+    button.thread-icon span.icon {
+        display: none !important;
+    }
+    
+    button.thread-icon {
+        font: 0.8em Arial,Helvetica,sans-serif !important;
+        display: inline !important;
+    }
+    
+    div.messagetitle {
+        padding: 0 !important;
+    }
+    
+    div.messagetitle h2 {
+        font-size: 1.2em !important;
+    }
+    
+    div#nextprevious {
+        margin: 5px 0 0 5px !important;
+    }
+    
+    ul.message_icontable {
+      list-style-type:none !important;
+      margin:0 !important; 
+      padding:0 !important;
+    }
+    
+    .message_icontable li {
+      display:inline;
+      padding-left: 5px;
+    }
+      
+    ul.message_icontable #printMessage {
+        display: none;
+    }  
+    ul.message_icontable #divWatchFlag {
+        display: none;
+    }  
+    #removeMessageLink span:nth-child(2) {
+        display: none;
+    }  
+    
+    /* Hide Useful Links side bar */
+    div.at-panel:nth-child(3) {
+        display: none;
+    }
+    
+    /* Hide entire Footer area */
+    footer {
+        display: none;
+    }   
+    
+    /* Misc */
+    div[role="button"] { /* Hide Flashblock placeholders */
+        display: none !important;
+    }
   
 }
 
 @-moz-document url-prefix("https://classroom.phoenix.edu/afm214/secure/confirm.jspa"), 
    url-prefix("https://classroom.phoenix.edu/afm214/secure/post!default.jspa") {
    
-.hd-bkg {
-    display: none;
-}
-
-.ft-bkg  {
-    display: none;
-} 
-  
-#doc3 {
-   min-width: 768px !important;
-}
-
-#postForm {
-    min-width: 768px !important;
-}
+    .hd-bkg {
+        display: none;
+    }
+    
+    .ft-bkg  {
+        display: none;
+    } 
+      
+    #doc3 {
+       min-width: 768px !important;
+    }
+    
+    #postForm {
+        min-width: 768px !important;
+    }
 
 }
