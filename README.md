@@ -15,14 +15,10 @@ Works with the Stylish plugin on both Firefox and Chrome
     * Resize posted message confirmation widow - close winow button isn't hidden anymore
 
 
-
 * userstyles.org
     * University of Phoenix - Compact Forums
     * http://userstyles.org/styles/86620/university-of-phoenix-compact-forums
 
-
-* Changelog:
-	* 2013-04-28 - Init release
 
 
 ## Custom Script
@@ -40,6 +36,3 @@ Tested on Firefox with MonkeyScript
     * UoP Forum Tweaks
     * http://userscripts.org/scripts/show/166314
 
-
-* Changelog:
-    * 2013-04-30 - Init release
