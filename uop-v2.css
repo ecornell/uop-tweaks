@@ -1,0 +1,17 @@
+.replyMessageBody, .replyMessageBody p, .replyMessageBody span, .replyMessageBody strong {
+  font-size: 15px !important;
+  line-height: 19px !important;
+  font-family: arial, helvetica, clean, sans-serif !important; 
+  color: #333;
+  font-weight: normal !important;
+}
+  
+.discussionthread-view-mod .aes-thread {
+  margin-left: 0px !important;
+}
+
+.aes-thread section {
+  border-left: #eaeaea;
+	border-left-width: 1px;
+	border-left-style: outset;
+}
